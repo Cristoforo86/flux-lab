@@ -1,0 +1,15 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: apache-helm-release
+  namespace: dev
+spec:
+  # Reference to the HelmRepository containing the chart
+  chart:
+    spec:
+      chart: apache
+      repositoryRef:
+        name: apache-helm-repo
+  # Helm values to override
+  values:
+    replicaCount: 3
