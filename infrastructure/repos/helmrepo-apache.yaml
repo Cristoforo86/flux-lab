@@ -10,3 +10,5 @@ spec:
   chart: apache
   # Helm chart version constraint
   version: 10.2.4
+  type: oci
+  interval: 5m
