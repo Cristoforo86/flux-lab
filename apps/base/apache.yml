@@ -7,10 +7,10 @@ spec:
   # Reference to the HelmRepository containing the chart
   chart:
     spec:
-      namespace: dev
       chart: apache
       repositoryRef:
         name: apache-helm-repo
   # Helm values to override
   values:
+    namespace: dev
     replicaCount: 3
