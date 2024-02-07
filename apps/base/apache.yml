@@ -5,6 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   # Reference to the HelmRepository containing the chart
+  interval: 5m
   chart:
     spec:
       chart: apache
