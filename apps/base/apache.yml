@@ -2,11 +2,12 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: apache-helm-release
-  namespace: dev
+  namespace: flux-system
 spec:
   # Reference to the HelmRepository containing the chart
   chart:
     spec:
+      namespace: dev
       chart: apache
       repositoryRef:
         name: apache-helm-repo
