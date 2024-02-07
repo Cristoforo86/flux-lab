@@ -9,6 +9,7 @@ spec:
     spec:
       chart: apache
       repositoryRef:
+        kind: HelmRepository
         name: apache-helm-repo
         namespace: flux-system
   # Helm values to override
