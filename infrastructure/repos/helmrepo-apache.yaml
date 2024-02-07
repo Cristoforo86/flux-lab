@@ -1,0 +1,12 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: apache-helm-repo
+  namespace: default
+spec:
+  # URL of your Helm repository
+  url: oci://registry-1.docker.io/bitnamicharts
+  # Chart name
+  chart: apache
+  # Helm chart version constraint
+  version: 10.2.4
