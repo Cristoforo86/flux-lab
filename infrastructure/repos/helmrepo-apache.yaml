@@ -4,6 +4,6 @@ metadata:
   name: apache-helm-repo
   namespace: flux-system
 spec:
-  url: oci://registry-1.docker.io/bitnamicharts
   type: oci
+  url: oci://registry-1.docker.io/bitnamicharts
   interval: 5m
