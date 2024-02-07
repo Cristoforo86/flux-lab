@@ -6,9 +6,5 @@ metadata:
 spec:
   # URL of your Helm repository
   url: oci://registry-1.docker.io/bitnamicharts
-  # Chart name
-  chart: apache
-  # Helm chart version constraint
-  version: 10.2.4
   type: oci
   interval: 5m
